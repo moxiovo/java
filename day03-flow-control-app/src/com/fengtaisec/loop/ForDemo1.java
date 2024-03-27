@@ -19,6 +19,9 @@ public class ForDemo1 {
             System.out.println("test");
             System.out.println("test");
             System.out.println("test");
+
+            System.out.println("test");
+            System.out.println("test");
         }
 
     }
