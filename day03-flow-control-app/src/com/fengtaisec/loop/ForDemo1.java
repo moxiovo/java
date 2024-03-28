@@ -7,6 +7,7 @@ public class ForDemo1 {
     首先执行初始化语句
     int i = 0 i = 0 0<3 返回true 计算机会进入到循环
     执行输出第一行helloworld 迭代语句i++
+    减少代码的重复编写，灵活控制程序。
     */
 
     public static void main(String[] args) {
