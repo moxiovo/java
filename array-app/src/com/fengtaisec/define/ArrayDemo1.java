@@ -16,6 +16,8 @@ public class ArrayDemo1 {
         int age3[] = {18, 20, 21};
         double scores3[] = {99.5, 59.5, 89.5, 88};
         // 对象（数组对象） = 东西
-        // 数组存储在内存中的地址，数组诗意中国引用数据类型。
+        // 数组存储在内存中的地址，数组是一种引用数据类型。
+        System.out.println(scores3[0]);
+        System.out.println(scores3.length);
     }
 }
