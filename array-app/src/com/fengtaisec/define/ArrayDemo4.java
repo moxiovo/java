@@ -9,6 +9,6 @@ public class ArrayDemo4 {
 //            sum = sum + money[i];
             sum += money[i];
         }
-        System.out.println(sum);
+        System.out.println("员工的销售总额：" + sum);
     }
 }
