@@ -16,13 +16,12 @@ public class ForDemo1 {
         System.out.println("-------------------------------");
         for(int i = 1; i <= 5; i++){
             System.out.println("Hello2");
-            System.out.println("test");
-            System.out.println("test");
-            System.out.println("test");
 
-            System.out.println("test");
-            System.out.println("test");
         }
-
+        System.out.println("--------------------------------------");
+        // 1 3 5 7 9 11
+        for (int i = 1; i <= 10; i += 2){
+            System.out.println("Hello3");
+        }
     }
 }
