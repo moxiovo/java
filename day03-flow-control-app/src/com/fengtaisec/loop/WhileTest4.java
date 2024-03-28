@@ -17,5 +17,7 @@ public class WhileTest4 {
         }
         System.out.println("纸张的最后厚度：" + paperThickness);
         System.out.println("需要折叠多少次：" + count);
+        // while和for功能上没有区别，基本都能实现
+        // 一开始不知道用while，知道循环几次用for
     }
 }
