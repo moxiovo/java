@@ -1,6 +1,6 @@
 package com.fengtaisec.loop;
 
-public class WhileDemo1 {
+public class WhileDemo3 {
     public static void main(String[] args) {
         // 为什么有for 还用while循环书写格式，理解执行流程
         // 迭代语句 is required for和while都能解决，反之亦然
