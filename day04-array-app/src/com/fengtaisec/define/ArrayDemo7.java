@@ -19,5 +19,9 @@ public class ArrayDemo7 {
         System.out.println(arr2);
         System.out.println(arr1);
 //        System.out.println(arr2.length); // 空指针异常
+        // 多个数组变存储的为同一个数组对象的地址
+        // 多个变量修改的都是同一个数组对象中的数据
+        // null代表没有指向数组对象
+        // NullPointerExceotion
     }
 }
