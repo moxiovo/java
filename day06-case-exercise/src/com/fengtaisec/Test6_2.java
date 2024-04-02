@@ -3,7 +3,7 @@ package com.fengtaisec;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Test6Demo2 {
+public class Test6_2 {
     public static void main(String[] args) {
         int[] array = {9, 666, 180, 520, 9999};
         start(array);
