@@ -1,4 +1,4 @@
-package com.fengtaisec.object;
+package com.fengtaisec.object.quickstart;
 
 public class Student {
     // 成员变量（对象的属性）

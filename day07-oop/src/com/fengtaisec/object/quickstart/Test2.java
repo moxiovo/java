@@ -1,4 +1,6 @@
-package com.fengtaisec.object;
+package com.fengtaisec.object.quickstart;
+
+import com.fengtaisec.object.quickstart.Student;
 
 public class Test2 {
     public static void main(String[] args) {
