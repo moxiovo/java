@@ -17,5 +17,13 @@ public class Test {
         s2.math = 100;
         s2.printTotalScore();
         s2.printAverageScore();
+
+        System.out.println(s1);
+        System.out.println(s2);
+
+        s1 = null;
+        s2 = null; // 一旦是null，就会发生空指针异常，堆内存中的对象，没有被任何变量引用，就会判断为内存中的垃圾
+        // java存在自动垃圾回收机制，会自动清除掉垃圾对象。
+        System.out.println(s1.name);
     }
 }
