@@ -1,7 +1,7 @@
 package com.fengtaisec.pkg;
 
-import com.fengtaisec.pkg.itcast.Demo1;
-import com.fengtaisec.pkg.itcast.Demo2;
+import com.fengtaisec.itcast.Demo1;
+import com.fengtaisec.itcast.Demo2;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -22,7 +22,7 @@ public class Test {
         // 访问多个其他包，这些程序名又一样的情况下，默认只能导入一个程序，另一个程序必须带包名和类名来访问。
         Demo2 d3 = new Demo2();
         d3.print();
-        com.fengtaisec.pkg.itcast2.Demo2 d4 = new com.fengtaisec.pkg.itcast2.Demo2(); // 带全包名
+        com.fengtaisec.itcast2.Demo2 d4 = new com.fengtaisec.itcast2.Demo2(); // 带全包名
         d4.print();
     }
 }

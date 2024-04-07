@@ -1,4 +1,4 @@
-package com.fengtaisec.pkg.itcast2;
+package com.fengtaisec.itcast2;
 
 public class Demo2 {
     public void print(){
