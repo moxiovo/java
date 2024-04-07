@@ -6,16 +6,17 @@ public class Student {
     private String name;
     private double score;
 
-    public String getName() {
-        return name;
-    }
     public Student(String name, double score) {
         this.name = name;
         this.score = score;
     }
 
-    // 必须为类提供一个公开的无参数构造器
     public Student() {
+    }
+
+
+    public String getName() {
+        return name;
     }
 
     public void setName(String name) {
