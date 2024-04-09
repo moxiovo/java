@@ -29,10 +29,11 @@ public class StringTest4 {
         String okPassword = "123456";
 
         // 判断用户是否登录成功
-        if(okLoginName.equals(loginName) && okPassword.equals(passWord)){
-            return true;
-        }else {
-            return false;
-        }
+//        if(okLoginName.equals(loginName) && okPassword.equals(passWord)){
+//            return true;
+//        }else {
+//            return false;
+//        }
+        return okLoginName.equals(loginName) && okPassword.equals(passWord);
     }
 }
