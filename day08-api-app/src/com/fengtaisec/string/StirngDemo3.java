@@ -14,8 +14,12 @@ public class StirngDemo3 {
 
         // new String创建字符串对象，每次new出来的都是一个新对象，放在堆内存中
         char[] chars = {'a', 'b', 'c'};
-        String a1 = new String(chars);
-        String a2 = new String(chars);
+//        String a1 = new String(chars);
+//        String a2 = new String(chars);
+//        System.out.println(a1 == a2);
+
+        String a1 = "abc";
+        String a2 = "a" + "b" + "c";
         System.out.println(a1 == a2);
 
     }
