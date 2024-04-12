@@ -73,7 +73,7 @@ public class FoodOperator {
                     break;
                 case "3":
                     System.out.println("下次在来吧！");
-                    return;
+                    return; // 干掉方法！
 
                 default:
                     System.out.println("输入的命令不存在，请输入1或2");
