@@ -106,19 +106,77 @@ public class ATM {
                     break;
                 case 5:
                     // 密码修改
-                    break;
+                    updatePassword();
+                    return;
                 case 6:
                     // 退出登录
                     System.out.println(loginAcc.getUserName() + "您退出系统成功~");
                     return; // 跳出并结束当前方法
                 case 7:
                     // 注销当前账户
-                    break;
+                    if (deleteAccount()){
+                        // 销户成功了,回到欢迎界面
+                        return; // 跳出当前方法
+                    }
+                    break; // 跳出switch分支
                 default:
-                    System.out.println("您选择的操作是不存在的，请确认");
+                    System.out.println("您选择的操作是不存在的，请确认~");
             }
         }
 
+    }
+    // 修改账户密码
+    private void updatePassword() {
+        System.out.println("==账户密码修改==");
+        // 提醒用户认证当前密码
+        while (true) {
+            System.out.println("请您输入当前账户的密码：");
+            String passWord = sc.next();
+            if (loginAcc.getPassWord().equals(passWord)){
+                System.out.println("身份认证成功~");
+                while (true) {
+                    // 真正开始修改密码
+                    System.out.println("请您输入新密码：");
+                    String newPassWord = sc.next();
+                    System.out.println("请您输入确认密码：");
+                    String okPassWord = sc.next();
+                    if (okPassWord.equals(newPassWord)) {
+                        loginAcc.setPassWord(okPassWord);
+                        System.out.println("恭喜您，您的密码修改成功~");
+                        return;
+                    }else {
+                        System.out.println("您输入的两次密码不一致~");
+                    }
+                }
+            }else {
+                System.out.println("您当前输入的密码不正确~");
+            }
+        }
+    }
+
+    // 销户操作
+    private boolean deleteAccount() {
+        System.out.println("==进行销户操作==");
+        // 1、问问用户是否要销户
+        System.out.println("请问您是否要确认销户操作 y/n");
+        String command = sc.next();
+        switch (command){
+            case "y":
+                // 销户
+                // 判断账户是否有钱
+                if (loginAcc.getMoney() == 0){
+                    // 真的销户
+                    accounts.remove(loginAcc);
+                    System.out.println("您好，您的账户已经成功销户~");
+                    return true;
+                }else {
+                    System.out.println("对不起您的账户中还有余额~");
+                    return false;
+                }
+            default:
+                System.out.println("您的账户保留~");
+                return false;
+        }
     }
 
     private void transferMoney() {
