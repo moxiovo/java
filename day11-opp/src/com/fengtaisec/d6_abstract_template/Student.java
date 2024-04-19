@@ -1,0 +1,9 @@
+package com.fengtaisec.d6_abstract_template;
+
+public class Student extends People{
+
+    @Override
+    public String writeMain() {
+        return "学生测试";
+    }
+}
