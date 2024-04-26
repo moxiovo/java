@@ -25,5 +25,8 @@ public class ArrayTest1 {
             }
         });
         System.out.println(Arrays.toString(prices));
+
+        Arrays.sort(prices);
+        System.out.println(Arrays.toString(prices));
     }
 }
