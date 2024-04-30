@@ -25,7 +25,7 @@ public class LambdaTest1 {
 //        };
 //        s.swim();
 
-        // lambda 表达式
+        // lambda 表达式，
         Swimming s = () -> {
             System.out.println("学生快乐的游泳~~~");
         };
