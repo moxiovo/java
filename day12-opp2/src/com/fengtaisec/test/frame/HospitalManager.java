@@ -31,7 +31,7 @@ public class HospitalManager {
                 case "1":
                     addDepartments();
                     break;
-                case "3":
+                case "4":
                     addDoctor();
                     break;
                 case "5":
@@ -100,7 +100,6 @@ public class HospitalManager {
             System.out.println("请选择科室：");
             for (int i = 0; i < allDepartments.size(); i++) {
                 Department department = allDepartments.get(i);
-                System.out.println("名称重复，请重新输入。");
                 System.out.println((i + 1) + "," + department.getName());
             }
             System.out.println("请输入");
