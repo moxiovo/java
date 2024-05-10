@@ -19,5 +19,7 @@ public class ListTest1 {
         System.out.println(list.get(3));
         list.set(2, "紫霞");
         System.out.println(list);
+
+
     }
 }
