@@ -1,6 +1,6 @@
 package com.fengtaisec.d3_exception;
 
-public class ExcepitonTest2 {
+public class ExceptionTest2 {
     public static void main(String[] args) throws AgeillegalException {
         // 需求：保存一个合法的年龄
 //        try {
