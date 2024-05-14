@@ -1,4 +1,4 @@
-package com.fengtaisec.d3_collection;
+package com.fengtaisec.d3_collection_list;
 
 import java.util.ArrayList;
 import java.util.List;

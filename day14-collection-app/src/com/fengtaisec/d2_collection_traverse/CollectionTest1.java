@@ -1,7 +1,6 @@
-package com.fengtaisec.d2_collection;
+package com.fengtaisec.d2_collection_traverse;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 
 public class CollectionTest1 {

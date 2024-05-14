@@ -1,4 +1,4 @@
-package com.fengtaisec.d2_collection;
+package com.fengtaisec.d2_collection_traverse;
 
 public class Movie {
     private String name;
