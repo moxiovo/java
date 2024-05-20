@@ -1,4 +1,4 @@
-package com.fengtaisec.d4_collection_set;
+package com.fengtaisec.d2_collections;
 
 import java.util.Objects;
 
