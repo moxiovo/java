@@ -2,6 +2,7 @@ package com.fengtaisec.d2_collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class CollectionsTest1 {
@@ -22,6 +23,17 @@ public class CollectionsTest1 {
         Collections.sort(list);
         System.out.println(list);
 
+        List<Student> students = new ArrayList<>();
+        students.add(new Student("蜘蛛精", 23, 169.7));
+        students.add(new Student("紫霞", 22, 169.8));
+        students.add(new Student("紫霞", 22, 169.8));
+        students.add(new Student("牛魔王", 22, 183.5));
+        // Collections.sort(students);
+        System.out.println(students);
+
+        // 比较器对象
+        Collections.sort(students, Comparator.comparingDouble(Student::getHeight));
+        System.out.println(students);
 
 
     }
