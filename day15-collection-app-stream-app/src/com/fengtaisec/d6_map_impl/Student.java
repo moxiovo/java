@@ -27,8 +27,8 @@ public class Student implements Comparable<Student>{
         // 左边对象小于右边对象返回负整数
         // 等于返回 0
         // 按照年龄升序排序
-
-        return this.age - o.age;
+        // this o
+        return this.age - o.age; // 年龄升序
     }
 
     public Student(String name, int age, double height) {
